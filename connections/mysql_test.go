@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/DucTran999/dbkit/config"
-	"github.com/DucTran999/dbkit/connections"
+	"github.com/ductran999/dbkit/config"
+	"github.com/ductran999/dbkit/connections"
 	"github.com/stretchr/testify/require"
 )
 
@@ -51,12 +51,12 @@ func TestMySQLConnectionFailed(t *testing.T) {
 	}
 
 	// test config missing host
-	conn, err := connections.NewMySQLConnection(conf)
+	_, err := connections.NewMySQLConnection(conf)
 	require.ErrorIs(t, err, config.ErrMissingHost)
 
 	// Test connection failed cause wrong port
 	conf.Host = "localhost"
-	conn, err = connections.NewMySQLConnection(conf)
-	require.ErrorContains(t, err, "connection refused")
+	conn, err := connections.NewMySQLConnection(conf)
+	require.ErrorContains(t, err, "failed to open MySQL connection")
 	require.Nil(t, conn)
 }

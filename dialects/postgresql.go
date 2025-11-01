@@ -3,7 +3,7 @@ package dialects
 import (
 	"fmt"
 
-	"github.com/DucTran999/dbkit/config"
+	"github.com/ductran999/dbkit/config"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )

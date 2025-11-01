@@ -5,8 +5,8 @@ package dbkit
 import (
 	"context"
 
-	"github.com/DucTran999/dbkit/config"
-	"github.com/DucTran999/dbkit/connections"
+	"github.com/ductran999/dbkit/config"
+	"github.com/ductran999/dbkit/connections"
 	"gorm.io/gorm"
 )
 

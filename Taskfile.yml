@@ -28,7 +28,7 @@ tasks:
   testenv:
     desc: setup test db
     cmds:
-      - ./scripts/testenv.sh
+      - docker compose -f docker-compose.yml --env-file .env.test up -d
 
   mock:
     desc: Auto-generate mocks for all interfaces

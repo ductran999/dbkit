@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/DucTran999/dbkit/config"
-	"github.com/DucTran999/dbkit/connections"
+	"github.com/ductran999/dbkit/config"
+	"github.com/ductran999/dbkit/connections"
 	"github.com/stretchr/testify/require"
 )
 
@@ -51,12 +51,12 @@ func TestClickHouseConnectionFailed(t *testing.T) {
 	}
 
 	// test config missing host
-	conn, err := connections.NewClickHouseConnection(chConf)
+	_, err := connections.NewClickHouseConnection(chConf)
 	require.ErrorIs(t, err, config.ErrMissingHost)
 
 	// Test connection failed cause wrong port
 	chConf.Host = "localhost"
-	conn, err = connections.NewClickHouseConnection(chConf)
-	require.ErrorContains(t, err, "connection refused")
+	conn, err := connections.NewClickHouseConnection(chConf)
+	require.ErrorContains(t, err, "failed to open ClickHouse connection")
 	require.Nil(t, conn)
 }

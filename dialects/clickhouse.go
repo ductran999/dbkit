@@ -7,7 +7,7 @@ import (
 	"time"
 
 	std_ck "github.com/ClickHouse/clickhouse-go/v2"
-	"github.com/DucTran999/dbkit/config"
+	"github.com/ductran999/dbkit/config"
 	"gorm.io/driver/clickhouse"
 	"gorm.io/gorm"
 )

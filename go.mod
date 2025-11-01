@@ -1,4 +1,4 @@
-module github.com/DucTran999/dbkit
+module github.com/ductran999/dbkit
 
 go 1.23.1
 

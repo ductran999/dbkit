@@ -3,8 +3,8 @@ package dialects_test
 import (
 	"testing"
 
-	"github.com/DucTran999/dbkit/config"
-	"github.com/DucTran999/dbkit/dialects"
+	"github.com/ductran999/dbkit/config"
+	"github.com/ductran999/dbkit/dialects"
 	"github.com/stretchr/testify/require"
 )
 
@@ -27,7 +27,7 @@ func TestPostgreSQLDialect(t *testing.T) {
 				},
 				SSLMode: config.PgSSLDisable,
 			},
-			expectedErr: "connection refused",
+			expectedErr: "failed to open PostgreSQL connection",
 		},
 		{
 			name: "valid config",

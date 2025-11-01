@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/DucTran999/dbkit/config"
-	"github.com/DucTran999/dbkit/connections"
+	"github.com/ductran999/dbkit/config"
+	"github.com/ductran999/dbkit/connections"
 	"github.com/stretchr/testify/require"
 )
 
@@ -52,12 +52,12 @@ func TestPostgreSQLConnectionFailed(t *testing.T) {
 	}
 
 	// test config missing host
-	conn, err := connections.NewPostgreSQLConnection(pgConf)
+	_, err := connections.NewPostgreSQLConnection(pgConf)
 	require.ErrorIs(t, err, config.ErrMissingHost)
 
 	// Test connection failed cause wrong port
 	pgConf.Host = "localhost"
-	conn, err = connections.NewPostgreSQLConnection(pgConf)
-	require.ErrorContains(t, err, "connection refused")
+	conn, err := connections.NewPostgreSQLConnection(pgConf)
+	require.ErrorContains(t, err, "failed to open PostgreSQL connection")
 	require.Nil(t, conn)
 }

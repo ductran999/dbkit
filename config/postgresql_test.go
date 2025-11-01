@@ -3,7 +3,7 @@ package config_test
 import (
 	"testing"
 
-	"github.com/DucTran999/dbkit/config"
+	"github.com/ductran999/dbkit/config"
 	"github.com/stretchr/testify/require"
 )
 

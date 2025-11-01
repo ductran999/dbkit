@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/DucTran999/dbkit"
-	"github.com/DucTran999/dbkit/config"
+	"github.com/ductran999/dbkit"
+	"github.com/ductran999/dbkit/config"
 	"github.com/stretchr/testify/require"
 )
 

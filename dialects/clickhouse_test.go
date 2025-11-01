@@ -3,8 +3,8 @@ package dialects_test
 import (
 	"testing"
 
-	"github.com/DucTran999/dbkit/config"
-	"github.com/DucTran999/dbkit/dialects"
+	"github.com/ductran999/dbkit/config"
+	"github.com/ductran999/dbkit/dialects"
 	"github.com/stretchr/testify/require"
 )
 
@@ -26,7 +26,7 @@ func TestClickHouseDialect(t *testing.T) {
 					TimeZone: "Asia/Ho_Chi_Minh",
 				},
 			},
-			expectedErr: "connection refused",
+			expectedErr: "failed to open ClickHouse connection",
 		},
 		{
 			name: "valid config",

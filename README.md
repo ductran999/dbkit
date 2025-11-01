@@ -1,10 +1,10 @@
 # DBKit - Database Abstraction Layer for Go
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/DucTran999/dbkit)](https://goreportcard.com/report/github.com/DucTran999/dbkit)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ductran999/dbkit)](https://goreportcard.com/report/github.com/ductran999/dbkit)
 [![Go](https://img.shields.io/badge/Go-1.23-blue?logo=go)](https://golang.org)
-[![codecov](https://codecov.io/gh/DucTran999/dbkit/graph/badge.svg?token=5XBMMBKCPD)](https://codecov.io/gh/DucTran999/dbkit)
+[![codecov](https://codecov.io/gh/ductran999/dbkit/graph/badge.svg?token=5XBMMBKCPD)](https://codecov.io/gh/ductran999/dbkit)
 [![Known Vulnerabilities](https://snyk.io/test/github/ductran999/dbkit/badge.svg)](https://snyk.io/test/github/ductran999/dbkit)
-[![License](https://img.shields.io/github/license/DucTran999/dbkit)](LICENSE)
+[![License](https://img.shields.io/github/license/ductran999/dbkit)](LICENSE)
 
 ## Overview
 
@@ -21,7 +21,7 @@
 ## Installation
 
 ```bash
-go get github.com/DucTran999/dbkit
+go get github.com/ductran999/dbkit
 ```
 
 ## Quick start
@@ -39,7 +39,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/DucTran999/dbkit"
+	"github.com/ductran999/dbkit"
 )
 
 func main() {
@@ -79,7 +79,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/DucTran999/dbkit"
+	"github.com/ductran999/dbkit"
 )
 
 func main() {
@@ -118,7 +118,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/DucTran999/dbkit"
+	"github.com/ductran999/dbkit"
 )
 
 func main() {

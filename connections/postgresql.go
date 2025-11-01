@@ -3,8 +3,8 @@ package connections
 import (
 	"fmt"
 
-	"github.com/DucTran999/dbkit/config"
-	"github.com/DucTran999/dbkit/dialects"
+	"github.com/ductran999/dbkit/config"
+	"github.com/ductran999/dbkit/dialects"
 )
 
 // NewPostgreSQLConnection initializes and returns a new PostgreSQL database connection.

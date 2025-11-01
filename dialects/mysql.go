@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/DucTran999/dbkit/config"
+	"github.com/ductran999/dbkit/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
